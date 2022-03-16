@@ -21,7 +21,7 @@ describe('Create new account', () => {
   it('Create new account: fill in only mandatory fields', () => {
     mainPage.clickSignInBtn();
    
-    common.pageIsDisplayed('Authentication');
+    common.pageIsDisplayed('Authentication2');
     authPage.fillInEmailField('test@test.com' + Math.floor(Date.now() / 1000));
     authPage.clickCreateBtn();
     common.wait(5000);
